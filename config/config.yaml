@@ -1,0 +1,23 @@
+# Insurance Email Triage System Configuration
+
+crew:
+  name: "Insurance Email Triage Crew"
+  agents:
+    - classification_agent
+    - insights_agent
+    - routing_agent
+    - compliance_agent
+  verbose: true
+  process: sequential
+
+# Email processing configurations
+email_processing:
+  batch_size: 10
+  default_priority: "Normal"
+  teams:
+    - "Underwriting"
+    - "Claims"
+    - "Policy Administration"
+    - "Compliance"
+    - "Customer Service"
+  timeout_seconds: 300

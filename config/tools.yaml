@@ -1,0 +1,21 @@
+# Insurance Email Triage Tools Configuration
+
+email_extraction_tool:
+  name: "Email Data Extraction"
+  func: EmailTools.extract_email_data
+  description: "Extract structured data from email content including policy numbers, claim IDs, and categorization."
+
+email_summary_tool:
+  name: "Email Summarization"
+  func: EmailTools.generate_email_summary
+  description: "Generate a concise summary of an email highlighting key points and relevant information."
+
+email_routing_tool:
+  name: "Email Routing Determination"
+  func: EmailTools.determine_routing
+  description: "Determine the appropriate team, priority, and handling requirements for an email."
+
+response_template_tool:
+  name: "Response Template Suggestion"
+  func: EmailTools.suggest_response_template
+  description: "Suggest an appropriate response template based on email content and type."
